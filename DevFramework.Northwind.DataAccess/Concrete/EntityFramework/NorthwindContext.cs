@@ -16,6 +16,8 @@ namespace DevFramework.Northwind.DataAccess.Concrete.EntityFramework
             Database.SetInitializer<NorthwindContext>(null); //veritabanında otomatik olarak veri oluşturmayı engeller
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        //
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
