@@ -14,6 +14,6 @@ namespace DevFramework.Core.DataAccess
         T Get(Expression<Func<T, bool>> filter);
         T Add(T entity);
         T Update(T entity);
-        void Delete(T entity);
+        T Delete(T entity);
     }
 }

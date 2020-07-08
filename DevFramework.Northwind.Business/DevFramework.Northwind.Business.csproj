@@ -42,12 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Concrete\Managers\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Concrete\Managers\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\DevFramework.Core\DevFramework.Core.csproj">
+      <Project>{056a425a-be10-4ae8-a3ef-956973d6e3e8}</Project>
+      <Name>DevFramework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevFramework.Northwind.DataAccess\DevFramework.Northwind.DataAccess.csproj">
+      <Project>{3AE8E729-29FF-46A3-AC88-E933222C5FCE}</Project>
+      <Name>DevFramework.Northwind.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DevFramework.Northwind.Entities\DevFramework.Northwind.Entities.csproj">
       <Project>{4C3271E5-8A46-4DE5-A548-7163F4D95F00}</Project>
       <Name>DevFramework.Northwind.Entities</Name>
