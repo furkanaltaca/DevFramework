@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DevFramework.Northwind.Business.DependencyResolves.Ninject
+namespace DevFramework.Northwind.Business.DependencyResolvers.Ninject
 {
     public class ValidationModule : NinjectModule
     {
