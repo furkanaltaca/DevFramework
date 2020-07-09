@@ -1,5 +1,5 @@
 # DevFramework
-C# ile backend ve katmanlı mimari 
+Backend and Layered Architecture with C# 
 Northwind database used.
 Logs table added to Northwind database.
 
