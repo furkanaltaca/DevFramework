@@ -10,7 +10,7 @@ namespace DevFramework.Core.CrossCuttingConcerns.Logging.Log4Net
     [Serializable]
     public class SerializableLogEvent
     {
-        public LoggingEvent _loggingEvent;
+        private LoggingEvent _loggingEvent;
 
         public SerializableLogEvent(LoggingEvent loggingEvent)
         {
@@ -18,6 +18,7 @@ namespace DevFramework.Core.CrossCuttingConcerns.Logging.Log4Net
         }
 
         public string UserName => _loggingEvent.UserName;
+        public DateTime Date => _loggingEvent.TimeStamp;
         public object MessageObject => _loggingEvent.MessageObject;
     }
 }
