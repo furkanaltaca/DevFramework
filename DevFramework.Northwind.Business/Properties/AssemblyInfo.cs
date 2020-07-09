@@ -1,5 +1,6 @@
 ﻿using DevFramework.Core.Aspects.PostSharp.ExceptionAspects;
 using DevFramework.Core.Aspects.PostSharp.LogAspects;
+using DevFramework.Core.Aspects.PostSharp.PerformanceAspects;
 using DevFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -19,6 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: LogAspect(typeof(DatabaseLogger), AttributeTargetTypes = "DevFramework.Northwind.Business.Concrete.Managers.*")]
 //[assembly: LogAspect(typeof(FileLogger), AttributeTargetTypes = "DevFramework.Northwind.Business.Concrete.Managers.*")]
 [assembly: ExceptionLogAspect(typeof(DatabaseLogger), AttributeTargetTypes = "DevFramework.Northwind.Business.Concrete.Managers.*")]
+[assembly: PerformanceCounterAspect(AttributeTargetTypes = "DevFramework.Northwind.Business.Concrete.Managers.*")]
 
 
 // Setting ComVisible to false makes the types in this assembly not visible
