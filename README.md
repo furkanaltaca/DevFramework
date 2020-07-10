@@ -17,3 +17,31 @@ CREATE TABLE [dbo].[Logs] (
 );
 
 
+Users table script:
+
+CREATE TABLE [dbo].[Users] (
+    [Id]        INT           IDENTITY (1, 1) NOT NULL,
+    [UserName]  VARCHAR (50)  NOT NULL,
+    [Password]  VARCHAR (50)  NOT NULL,
+    [FirstName] VARCHAR (50)  NOT NULL,
+    [LastName]  VARCHAR (50)  NOT NULL,
+    [Email]     VARCHAR (100) NOT NULL
+);
+
+
+Roles table script:
+
+CREATE TABLE [dbo].[Roles] (
+    [Id]   INT          IDENTITY (1, 1) NOT NULL,
+    [Name] VARCHAR (50) NOT NULL
+);
+
+UserRoles table script:
+
+CREATE TABLE [dbo].[UserRoles] (
+    [Id]     INT IDENTITY (1, 1) NOT NULL,
+    [UserId] INT NOT NULL,
+    [RoleId] INT NOT NULL
+);
+
+
