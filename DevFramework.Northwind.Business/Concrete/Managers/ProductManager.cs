@@ -21,7 +21,6 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
     public class ProductManager : IProductService
     {
         private IProductDal _productDal;
-
         public ProductManager(IProductDal productDal)
         {
             _productDal = productDal;
@@ -29,7 +28,7 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
 
         [CacheAspect(typeof(MemoryCacheManager))]
         [PerformanceCounterAspect(2)]
-        [SecuredOperation(Roles = "Student,Editor")]
+        // [SecuredOperation(Roles = "Student,Editor")]
         public List<Product> GetAll()
         {
             return _productDal.GetAll();
