@@ -21,9 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFramework.Northwind.Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFramework.Northwind.WebApi", "DevFramework.Northwind.WebApi\DevFramework.Northwind.WebApi.csproj", "{8C6006AB-7895-43F0-BFFB-3B5F10358B98}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DevFramework.Northwind.WcfService", "DevFramework.Northwind.WcfService\", "{43DEF187-127D-4A17-A3F7-955BD2D11208}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DevFramework.Northwind.WcfService", "DevFramework.Northwind.WcfService\", "{F37C30AC-B4A3-4AA3-ADA7-192C2B9F6484}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{028eb670-34e0-46a2-9367-208ed1073e34}|DevFramework.Northwind.Business.dll;{056A425A-BE10-4AE8-A3EF-956973D6E3E8}|DevFramework.Core.dll;{3AE8E729-29FF-46A3-AC88-E933222C5FCE}|DevFramework.Northwind.DataAccess.dll;{4C3271E5-8A46-4DE5-A548-7163F4D95F00}|DevFramework.Northwind.Entities.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_64141"
 		Debug.AspNetCompiler.PhysicalPath = "DevFramework.Northwind.WcfService\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64141\"
@@ -85,10 +86,10 @@ Global
 		{8C6006AB-7895-43F0-BFFB-3B5F10358B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C6006AB-7895-43F0-BFFB-3B5F10358B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C6006AB-7895-43F0-BFFB-3B5F10358B98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43DEF187-127D-4A17-A3F7-955BD2D11208}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43DEF187-127D-4A17-A3F7-955BD2D11208}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43DEF187-127D-4A17-A3F7-955BD2D11208}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{43DEF187-127D-4A17-A3F7-955BD2D11208}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F37C30AC-B4A3-4AA3-ADA7-192C2B9F6484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F37C30AC-B4A3-4AA3-ADA7-192C2B9F6484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F37C30AC-B4A3-4AA3-ADA7-192C2B9F6484}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F37C30AC-B4A3-4AA3-ADA7-192C2B9F6484}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
