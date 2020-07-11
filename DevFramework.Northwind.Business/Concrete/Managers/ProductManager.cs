@@ -28,7 +28,7 @@ namespace DevFramework.Northwind.Business.Concrete.Managers
 
         [CacheAspect(typeof(MemoryCacheManager))]
         [PerformanceCounterAspect(2)]
-        // [SecuredOperation(Roles = "Student,Editor")]
+        [SecuredOperation(Roles = "Editor")]
         public List<Product> GetAll()
         {
             return _productDal.GetAll();
